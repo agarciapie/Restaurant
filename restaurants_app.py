@@ -94,9 +94,16 @@ restaurants = load_restaurants(username)  # Carrega restaurants de l'usuari
 # Menú lateral per navegar entre seccions
 menu = st.sidebar.radio(
     "Menú",
-    ("Presentació", "Restaurants registrats", "Afegir restaurant"),
+    ("Presentació", "Restaurants registrats", "Afegir restaurant", "Sortir"),  # Afegit "Sortir"
     index=0
 )
+
+# Opció sortir
+if menu == "Sortir":
+    st.session_state.logged_in = False
+    st.session_state.username = ""
+    st.success("Has sortit de la sessió.")
+    st.experimental_rerun()
 
 # Pàgina de presentació amb imatge i instruccions
 if menu == "Presentació":
