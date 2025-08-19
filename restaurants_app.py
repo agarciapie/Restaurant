@@ -103,7 +103,7 @@ if menu == "Sortir":
     st.session_state.logged_in = False
     st.session_state.username = ""
     st.success("Has sortit de la sessió.")
-    st.experimental_rerun()
+    st.rerun()
 
 # Pàgina de presentació amb imatge i instruccions
 if menu == "Presentació":
