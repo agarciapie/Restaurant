@@ -113,7 +113,7 @@ if menu == "Presentació":
         caption="Benvingut/da a la teva agenda de restaurants!"
     )
     st.markdown("""
-    ### Què pots fer amb aquesta aplicació?
+    ### Què pots fer amb aquesta aplicació?000
     - **Registrar** restaurants que visites amb tota la informació rellevant.
     - **Valorar** i afegir comentaris personals.
     - **Consultar** la teva llista privada de restaurants.
